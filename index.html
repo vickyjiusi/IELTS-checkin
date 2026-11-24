@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#b85c7b"><meta name="description" content="Vicky 的粉色雅思自习室：每日计划、专注计时、听说读写、学习日历与复盘。">
+  <title>Vicky's IELTS · 一点点，走向 7.5</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="./style.css">
+  <script src="./app.js" defer></script>
+</head>
+<body>
+<header class="topbar wrap"><a class="brand" href="#today"><span class="brand-mark">v.</span><span>Vicky's IELTS<small>YOUR LITTLE STUDY CORNER</small></span></a><div class="top-actions"><button class="quiet" id="backup">↗ 导出备份</button><button class="quiet" id="import">↙ 导入</button><button class="avatar" id="settings" aria-label="目标设置">V</button></div></header>
+<main class="wrap">
+<section class="hero" aria-label="学习概览">
+ <div class="hero-main"><div class="eyebrow"><span class="live-dot"></span> A LITTLE PROGRESS, EVERY DAY</div><h1>一点点，<br>走向 <span id="hero-score">7.5</span><i>✧</i></h1><p>Vicky，今天也留一点时间给英语。<br>忙的时候，认真学 10 分钟也很好。</p><div class="hero-bottom"><span id="today-date"></span><button id="edit-goal">修改目标 ↗</button></div><svg class="book-art" viewBox="0 0 220 190" aria-hidden="true"><ellipse cx="114" cy="166" rx="83" ry="12" fill="#7d3656" opacity=".09"/><path d="M37 135 144 107 191 131 83 162Z" fill="#f5cbd5" stroke="#9d526a" stroke-width="2"/><path d="M37 135v12l46 24 108-29v-11L83 159Z" fill="#fff2e7" stroke="#9d526a" stroke-width="2"/><path d="m49 105 103-26 39 28-105 28Z" fill="#b35d7d" stroke="#8a415d" stroke-width="2"/><path d="M49 105v13l37 27 105-27v-11L86 133Z" fill="#fff4eb" stroke="#8a415d" stroke-width="2"/><path d="m55 74 98-28 36 29-98 28Z" fill="#f3d7b8" stroke="#9d526a" stroke-width="2"/><path d="M55 74v12l36 29 98-28V75l-98 28Z" fill="#fff5ee" stroke="#9d526a" stroke-width="2"/><path d="m109 58 15-4 34 29-15 4Z" fill="#cd7a95"/><path d="m162 28 3 10 10 3-10 3-3 10-3-10-10-3 10-3Z" fill="#a15071"/><path d="m40 44 2 6 6 2-6 2-2 6-2-6-6-2 6-2Z" fill="#a15071"/></svg></div>
+ <div class="metrics" id="metrics"></div>
+</section>
+<nav class="tabs" aria-label="学习栏目" id="nav"></nav>
+<div id="view" tabindex="-1"></div>
+<footer><span>Made for Vicky <b>♡</b> 慢慢来，也会到达。</span><span>记录保存在本机浏览器 · 记得定期备份</span></footer>
+</main>
+<dialog id="modal"><div class="modal-head"><h2 id="modal-title"></h2><button id="modal-close" class="icon-btn" aria-label="关闭">×</button></div><div id="modal-content"></div></dialog>
+<div id="toast" role="status" aria-live="polite"></div><input id="import-file" type="file" accept="application/json,.json" hidden>
+</body></html>
